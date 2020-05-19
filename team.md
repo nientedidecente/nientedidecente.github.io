@@ -4,7 +4,7 @@ title: Team
 permalink: /team/
 ---
     
-{% assign sorted = (site.authors | sort: 'name') %}
+{% assign sorted = site.authors | sort: 'name' %}
 | Name | Role  | Github | Discord | Reddit |
 | :--- | :---: | :----: | :-----: | :----: |
 {% for p in sorted -%}
