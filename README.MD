@@ -1,3 +1,64 @@
+# How to contribute
+
+In order to contribute with to this blog, you have two prerequisites:
+
+1. Create an author page
+2. Write a post
+
+## Create an author page
+
+Every team member should have an author page. But every blog contributor _shall_ have one.
+
+An author page is just a markdown file put into `_authors` with a YAML frontmatter and a content:
+
+```yaml
+---
+layout: author
+short_name: tdoe
+name: Ted Doe
+role: Writer
+github: tdoe
+discord: tdoe#123
+reddit: teddoe
+---
+
+Content of my personal page in _markdown_ **syntax**
+```
+
+* `layout`: mandatory to be set to `author`
+* `short_name`: a short name to use in the `author` field of a post
+* `name`: your name
+* `role`: your role
+* `github`: your github handle
+* `discord`: your discord username
+* `reddut`: your reddit username
+
+`layout`, `short_name` and `name` are mandatory. Everything else is optional.
+
+At the end of the page content, a list of your posts will be shown. This list is retrieved by your `short_name`, so be sure to put _that_ as post's `author`.
+
+Refer to `_authors/slaierno.md` to build your own author page.
+
+## Create a post
+
+Every blog post shall be put into `_posts`. Jekyll requires blog post files to be named according to the following format:
+
+`YEAR-MONTH-DAY-title.MARKUP`
+
+Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. An example of front matter can be:
+
+```yaml
+---
+layout: post
+title:  "Welcome to Jekyll!"
+date:   2020-05-18 12:42:55 +0200
+categories: jekyll update
+author: teddoe
+---
+```
+
+An example post where you can refer is `_posts/example.markdown`.
+
 # How to set up the blog and test it by yourself?
 
 1. Install `ruby`
