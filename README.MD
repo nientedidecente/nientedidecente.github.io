@@ -31,7 +31,7 @@ Content of my personal page in _markdown_ **syntax**
 * `role`: your role
 * `github`: your github handle
 * `discord`: your discord username
-* `reddut`: your reddit username
+* `reddit`: your reddit username
 
 `layout`, `short_name` and `name` are mandatory. Everything else is optional.
 
@@ -56,6 +56,9 @@ categories: jekyll update
 author: teddoe
 ---
 ```
+
+If you need to use LaTeX style math notation, add {% include mathjs %} to your post, just after the front matter.
+You can then add equations by enclosing them in double dollar signs, like so: $$ a + b = c $$ 
 
 An example post where you can refer is `_posts/example.markdown`.
 
