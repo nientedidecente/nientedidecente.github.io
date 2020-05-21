@@ -14,7 +14,7 @@ layout: default
 <table>
 <tr>
 {% for lang in page.langs -%}
-<th colspan="2"> {{ site.data.skillset[lang.name].name }} {%- if lang.ver -%} ({{lang.ver | join: ","}}) {%- endif -%} </th>
+<th colspan="2"> {{ site.data.skillset["langs"][lang.name].name }} {%- if lang.ver -%} ({{lang.ver | join: ","}}) {%- endif -%} </th>
 {%- endfor %}
 </tr>
 <tr>
@@ -38,7 +38,7 @@ layout: default
 <table>
 <tr>
 {% for fw in page.frameworks -%}
-<th colspan="2"> {{ site.data.skillset[fw.name].name }} {%- if fw.ver -%} ({{fw.ver | join: ","}}) {%- endif -%} </th>
+<th colspan="2"> {{ site.data.skillset["frameworks"][fw.name].name }} {%- if fw.ver -%} ({{fw.ver | join: ","}}) {%- endif -%} </th>
 {%- endfor %}
 </tr>
 <tr>
@@ -62,7 +62,7 @@ layout: default
 <table>
 <tr>
 {% for skill in page.misc -%}
-<th colspan="2"> {{ site.data.skillset[skill.name].name }} {%- if skill.ver -%} ({{skill.ver | join: ","}}) {%- endif -%} </th>
+<th colspan="2"> {{ site.data.skillset["misc"][skill.name].name }} {%- if skill.ver -%} ({{skill.ver | join: ","}}) {%- endif -%} </th>
 {%- endfor %}
 </tr>
 <tr>
