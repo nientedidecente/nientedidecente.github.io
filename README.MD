@@ -102,3 +102,19 @@ modify `platforms.rb` with this command to fix it:
 ```
 sed -i 's/rescue Errno::ENOENT/rescue Errno::ENOENT, Errno::EACCESS/' /var/lib/gems/2.7.0/gems/jekyll-3.8.5/lib/jekyll/utils/platforms.rb
 ```
+
+# Run it locally with Docker
+
+To build the docker container:
+```
+docker-compose up -d
+```
+
+First time it might take between 3 and 10 minutes.
+
+Once done it will be reachable on [localhost:4000](http://localhost:4000).
+
+To stop it
+```
+docker-compose stop
+```
