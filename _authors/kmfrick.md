@@ -16,7 +16,7 @@ I modelli matematici e statistici e lo sviluppo a basso livello sono quindi dive
 
 Nel mio tempo libero suono il basso, cucino e vado a teatro. 
 Per un periodo ho anche recitato. 
-Sono convinto che la pratica sia una forma d'arte e perciò mi impegno a lasciarmi guidare dalla ricerca di bellezza ed eleganza nel mio lavoro.
+Sono convinto che il lavoro pratico sia una forma d'arte e perciò mi impegno a lasciarmi guidare dalla ricerca di bellezza ed eleganza nel mio operato.
 
 In ambito gamedev ho sviluppato piccoli progetti personali con motori grafici e ho collaborato con progetti open source, scrivendo principalmente codice C++ per l'IA dei personaggi non giocanti.
 
@@ -31,6 +31,6 @@ Mathematical and statistical modeling as well as low-level development thus beca
 
 In my free time I play the bass, cook and go to the theater.
 I also acted for a while.
-I'm firmly convinced that practical work is an art form and this is why I strive to let the search for beauty and elegance guide me in my work.
+I'm firmly convinced that practical work is an art form and this is why I strive to let the search for beauty and elegance guide me in what I do.
 
 I developed small personal projects with graphics engines and collaborated with open source projects in the gamedev world, primarily writing C++ code for non-playing characters' AI.
