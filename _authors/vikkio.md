@@ -28,7 +28,8 @@ langs:
   - name: c
     self: 1
     want: 1
-  - name: cpp 
+  - name: cpp
+    ver: [98, 11] 
     self: 1
     want: 2
   - name: rb

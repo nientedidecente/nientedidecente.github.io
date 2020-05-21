@@ -72,7 +72,7 @@ title: Skills
                 {%- endunless -%}
 
                 <tr>
-                    <td>{{author.name}}</td>
+                    <td><a href="{{author.url}}">{{author.name}}</a></td>
                 {%- for type in self_want -%}
                     {%- if skill.vers -%}
                         {%- for ver in skill.vers -%}

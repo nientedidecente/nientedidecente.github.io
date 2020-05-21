@@ -50,6 +50,12 @@ frameworks:
     name: "Love2D"
   irrlicht:
     name: "Irrlicht"
+  idtech:
+    name: "id Tech"
+  ogre:
+    name: "OGRE 3D"
+  osg:
+    name: "OpenSceneGraph"
 
 misc:
   3D:
