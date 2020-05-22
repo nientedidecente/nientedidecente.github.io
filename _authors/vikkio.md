@@ -4,8 +4,8 @@ short_name: vikkio
 name: Vincenzo Ciaccio
 role: Funnel Founder
 github: vikkio88
-discord: 
-reddit: 
+discord: larroteeno#2939
+reddit: vikkio
 langs:
   - name: php 
     self: 3
