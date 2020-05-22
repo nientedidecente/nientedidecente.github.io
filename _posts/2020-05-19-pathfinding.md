@@ -72,15 +72,16 @@ Tienila a mente, ma sopporta un altro po' di definizioni.
 
 Un insieme di archi che parte da un nodo A e arriva a un nodo B si chiama *cammino*. 
 Un cammino ha una certa *lunghezza* o *costo*, che nel caso dei grafi non pesati è il numero di archi che compongono il cammino mentre nei grafi pesati è la somma dei pesi degli archi che compongono il cammino.
-Ad esempio, nel grafo mostrato in figura esiste un cammino di lunghezza 3 tra i nodi 1 e 6: 1->5->4->6. 
-Ovviamente puoi arrivare da 1 a 6 anche passando per i nodi 1->2->3->4->6. 
+Ad esempio, nel grafo mostrato in figura esiste un cammino di lunghezza 3 tra i nodi 1 e 6: `1->5->4->6`. 
+Ovviamente puoi arrivare da 1 a 6 anche passando per i nodi `1->2->3->4->6`. 
 Questo cammino ha lunghezza 4.
-Il grafo non è diretto, quindi puoi tranquillamente arrivare da 1 a 6 seguendo 1->2->1->2->1->2->5->4->3->4->6.
+Il grafo non è diretto, quindi puoi tranquillamente arrivare da 1 a 6 seguendo `1->2->1->2->1->2->5->4->3->4->6`.
 Questo cammmino ha lunghezza 10.
 
-Cos'ha di speciale il cammino 1->5->4->6 allora?
+Cos'ha di speciale il cammino `1->5->4->6` allora?
 È il più breve. 
-In teoria dei grafi, questo si chiama *cammino minimo* e il problema di trovare, se esiste, il cammino minimo tra una coppia arbitraria di nodi si chiama *ricerca del cammino minimo*.
+In teoria dei grafi, questo si chiama *cammino minimo* tra 1 e 6 e il problema di trovare, se esiste, il cammino minimo tra una coppia arbitraria di nodi si chiama *ricerca del cammino minimo*.
+Ci possono essere più cammini minimi, che hanno lo stesso costo ma lo realizzano passando per nodi diversi.
 
 La maggior parte degli algoritmi per la ricerca del cammino minimo sono costruiti per trovarlo tra un nodo e tutti gli altri (*single source shortest path*, SSSP) oppure tra tutte le possibili coppie di nodi (*all pairs shortest path*, APSP). 
 
