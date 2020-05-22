@@ -1,6 +1,6 @@
 # How to contribute
 
-In order to contribute with to this blog, you have two prerequisites:
+In order to contribute to this blog, there are two prerequisites:
 
 1. Create an author page
 2. Write a post
@@ -20,6 +20,18 @@ role: Writer
 github: tdoe
 discord: tdoe#123
 reddit: teddoe
+langs:
+  - name: cpp
+    ver: [11,14]
+    self: 2
+    want: 3
+frameworks:
+  - name: godot
+    want: 2
+misc:
+  - name: 3D
+    self: 1
+    want: 2
 ---
 
 Content of my personal page in _markdown_ **syntax**
@@ -32,12 +44,57 @@ Content of my personal page in _markdown_ **syntax**
 * `github`: your github handle
 * `discord`: your discord username
 * `reddit`: your reddit username
+* `langs`, `frameworks` and `misc`: your skills, refer to the next section.
 
 `layout`, `short_name` and `name` are mandatory. Everything else is optional.
 
-At the end of the page content, a list of your posts will be shown. This list is retrieved by your `short_name`, so be sure to put _that_ as post's `author`.
+At the end of the page content, a skill table and a list of your posts will be shown. The skill table is compiled with the skills in your YAML frontmatter. The post list is retrieved by your `short_name`, so be sure to put _that_ as post's `author`.
 
-Refer to `_authors/slaierno.md` to build your own author page.
+Refer to `_authors/slaierno.md` as an example to build your own author page.
+
+### `langs`, `frameworks` and `misc`
+
+Each one of such variables works like the other. We will refer to `langs` with this in mind.
+
+* `name` short name of the skill. Those names can be found in `_data/skillset.yml`
+* `ver` optional list of versions. Available versions can be found in `_data/skillset.yml`
+* `self` how much an author is capable in a skill. Points go from 0 to 3, default (if absent) is 0
+* `want` how much an author is want to learn a  skill. Points go from 0 to 3, default (if absent) is 0
+
+Remember to put each skill in the correct category (`langs`, `frameworks`, `misc`) as defined in `_data/skillset.yml`.
+
+For each skill, multiple entries can be put if they refer to different versions. If a version-less entry is put, this values will be used as default for every non-specified value. E.g.
+
+```yaml
+langs:
+  - name: cpp
+    ver: [11,14]
+    self: 2
+    want: 3
+  - name: cpp
+    self: 1
+    want: 2
+```
+Means that the author has S/W=(2,3) for C++11 and C++14 and S/W=(1,2) for the other available versions (98, 17, 20).  
+Beware that anytime you put a version-specific entry, suche values will override the existing ones. E.g.
+```yaml
+langs:
+  - name: cpp
+    ver: [11,14]
+    want: 3
+  - name: cpp
+    self: 1
+    want: 2
+```
+The first entry specifies versions 11 and 14, but since `self` is skipped, 0 will be assumed and the author will find a skillset like:
+
+| S98 | S11   | S14   | S17 | S20 | W98 | W11 | W14 | W17 | W20 |
+| --- | ----- | ----- | --- | --- | --- | --- | --- | --- | --- |
+| 1   | **0** | **0** | 1   | 1   | 2   | 3   | 3   | 2   | 2   |
+
+### Adding more skills
+
+If you want to add a skill or a skill version, just update `_data/skillset.yml` and you are free to add such skill/version in your personal page.
 
 ## Create a post
 

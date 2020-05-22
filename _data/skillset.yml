@@ -1,0 +1,70 @@
+titles:
+  langs: "Languages"
+  frameworks: "Frameworks"
+  misc: "Miscellaneous"
+
+langs:
+  cpp:
+    name: "C++"
+    vers: [98, 11, 14, 17, 20]
+  c:
+    name: "C"
+    vers: [89, 99, 11]
+  python:
+    name: "Python"
+    vers: [2, 3]
+  php:
+    name: "PHP"
+  js:
+    name: "Javascript"
+  java:
+    name: "Java"
+    vers: [7,8,9,10,11]
+  go:
+    name: "Go"
+  cs:
+    name: "C#"
+  lua:
+    name: "Lua"
+  clj:
+    name: "Clojure"
+  rb:
+    name: "Ruby"
+  hx:
+    name: "Haxe"
+
+frameworks:
+  godot:
+    name: "Godot"
+  unreal:
+    name: "Unreal Engine"
+  unity:
+    name: "Unity"
+  pygame:
+    name: "PyGame"
+  phaser:
+    name: "Phaser.js"
+  heaps:
+    name: "Heaps"
+  l2d:
+    name: "Love2D"
+  irrlicht:
+    name: "Irrlicht"
+  idtech:
+    name: "id Tech"
+  ogre:
+    name: "OGRE 3D"
+  osg:
+    name: "OpenSceneGraph"
+
+misc:
+  3D:
+    name: "3D Graphics"
+  2D:
+    name: "2D Graphics"
+  agile:
+    name: "AGILE/SCRUM"
+  devops:
+    name: "DevOps"
+  audio:
+    name: "Audio"

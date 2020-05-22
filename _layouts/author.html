@@ -6,6 +6,81 @@ layout: default
 
 {{ content }}
 
+
+<h2> Skillset</h2>
+
+<h3>Languages</h3>
+
+<table>
+<tr>
+{% for lang in page.langs -%}
+<th colspan="2"> {{ site.data.skillset["langs"][lang.name].name }} {%- if lang.ver -%} ({{lang.ver | join: ","}}) {%- endif -%} </th>
+{%- endfor %}
+</tr>
+<tr>
+{% for lang in page.langs -%}
+{% if lang.self and lang.want %} {% assign cs = 1 %} {% else %} {% assign cs = 2 %} {% endif %}
+{% if lang.self %}<th colspan="{{cs}}">Self</th>{% endif %}
+{% if lang.want %}<th colspan="{{cs}}">Want</th>{% endif %}
+{%- endfor %}
+</tr>
+<tr>
+{% for lang in page.langs -%}
+{% if lang.self and lang.want %} {% assign cs = 1 %} {% else %} {% assign cs = 2 %} {% endif %}
+{% if lang.self %}<td colspan="{{cs}}">{{lang.self}}</td>{% endif %}
+{% if lang.want %}<td colspan="{{cs}}">{{lang.want}}</td>{% endif %}
+{%- endfor %}
+</tr>
+</table>
+
+<h3>Frameworks</h3>
+
+<table>
+<tr>
+{% for fw in page.frameworks -%}
+<th colspan="2"> {{ site.data.skillset["frameworks"][fw.name].name }} {%- if fw.ver -%} ({{fw.ver | join: ","}}) {%- endif -%} </th>
+{%- endfor %}
+</tr>
+<tr>
+{% for fw in page.frameworks -%}
+{% if fw.self and fw.want %} {% assign cs = 1 %} {% else %} {% assign cs = 2 %} {% endif %}
+{% if fw.self %}<th colspan="{{cs}}">Self</th>{% endif %}
+{% if fw.want %}<th colspan="{{cs}}">Want</th>{% endif %}
+{%- endfor %}
+</tr>
+<tr>
+{% for fw in page.frameworks -%}
+{% if fw.self and fw.want %} {% assign cs = 1 %} {% else %} {% assign cs = 2 %} {% endif %}
+{% if fw.self %}<td colspan="{{cs}}">{{fw.self}}</td>{% endif %}
+{% if fw.want %}<td colspan="{{cs}}">{{fw.want}}</td>{% endif %}
+{%- endfor %}
+</tr>
+</table>
+
+<h3>Miscellaneous</h3>
+
+<table>
+<tr>
+{% for skill in page.misc -%}
+<th colspan="2"> {{ site.data.skillset["misc"][skill.name].name }} {%- if skill.ver -%} ({{skill.ver | join: ","}}) {%- endif -%} </th>
+{%- endfor %}
+</tr>
+<tr>
+{% for skill in page.misc -%}
+{% if skill.self and skill.want %} {% assign cs = 1 %} {% else %} {% assign cs = 2 %} {% endif %}
+{% if skill.self %}<th colspan="{{cs}}">Self</th>{% endif %}
+{% if skill.want %}<th colspan="{{cs}}">Want</th>{% endif %}
+{%- endfor %}
+</tr>
+<tr>
+{% for skill in page.misc -%}
+{% if skill.self and skill.want %} {% assign cs = 1 %} {% else %} {% assign cs = 2 %} {% endif %}
+{% if skill.self %}<td colspan="{{cs}}">{{skill.self}}</td>{% endif %}
+{% if skill.want %}<td colspan="{{cs}}">{{skill.want}}</td>{% endif %}
+{%- endfor %}
+</tr>
+</table>
+
 <h2>Posts</h2>
 <ul>
   {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
