@@ -14,7 +14,7 @@ title: Skills
         {%- assign skill = skill_[1] -%} {%- comment -%} possible skill-related skills {%- endcomment -%}
 
         {%- comment -%} Search if there is at least an author holding skills for this skill
-                        and continues to next skill if there is noone {%- endcomment -%}
+                        and continues to next skill if there is no one {%- endcomment -%}
         {%- assign skill_found = false -%}
         {%- for author in site.authors -%}
             {%- for a_skill in author[stype] -%}
@@ -106,21 +106,6 @@ title: Skills
                                 {%- endunless -%}
                                 {%- assign score = skill_found[type] -%}
                             {%- endif -%}
-{%-comment-%} This is disabled but we will keep it here for backup reason
-                            {%- if skill_found.ver -%}
-                                {%- if skill_found[type] -%}
-                                    {%- for a_ver in skill_found.ver -%}
-                                        {%- if a_ver == ver -%}
-                                            {%- assign score = skill_found[type] -%}
-                                            {%- break -%}
-                                        {%- endif -%}
-                                    {%- endfor -%}
-                                {%- endif -%}
-                            {%- else -%}
-                                {%- assign score = skill_found[type] -%}
-                            {%- endif -%}
-{%- endcomment -%}
-
                             <td>{%- if score > 0 -%} {{score}} {%- endif -%}</td>
                         {%- endfor -%}
                     {%- else -%}

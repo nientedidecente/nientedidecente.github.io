@@ -1,6 +1,6 @@
 # How to contribute
 
-In order to contribute with to this blog, you have two prerequisites:
+In order to contribute to this blog, there are two prerequisites:
 
 1. Create an author page
 2. Write a post
@@ -44,17 +44,17 @@ Content of my personal page in _markdown_ **syntax**
 * `github`: your github handle
 * `discord`: your discord username
 * `reddit`: your reddit username
-* `langs`, `frameworks` and `misc`: refer to next section.
+* `langs`, `frameworks` and `misc`: your skills, refer to the next section.
 
 `layout`, `short_name` and `name` are mandatory. Everything else is optional.
 
-At the end of the page content, a list of your posts will be shown. This list is retrieved by your `short_name`, so be sure to put _that_ as post's `author`.
+At the end of the page content, a skill table and a list of your posts will be shown. The skill table is compiled with the skills in your YAML frontmatter. The post list is retrieved by your `short_name`, so be sure to put _that_ as post's `author`.
 
 Refer to `_authors/slaierno.md` as an example to build your own author page.
 
 ### `langs`, `frameworks` and `misc`
 
-Each one of such variable works like the other. We will refer to `langs` with this in mind.
+Each one of such variables works like the other. We will refer to `langs` with this in mind.
 
 * `name` short name of the skill. Those names can be found in `_data/skillset.yml`
 * `ver` optional list of versions. Available versions can be found in `_data/skillset.yml`
@@ -63,7 +63,7 @@ Each one of such variable works like the other. We will refer to `langs` with th
 
 Remember to put each skill in the correct category (`langs`, `frameworks`, `misc`) as defined in `_data/skillset.yml`.
 
-For each skill, multiple entries can be put if they refer to different version. If a version-less entry is put, this values will be used as default for every non-specified value. E.g.
+For each skill, multiple entries can be put if they refer to different versions. If a version-less entry is put, this values will be used as default for every non-specified value. E.g.
 
 ```yaml
 langs:
