@@ -3,7 +3,7 @@ layout: page
 title: Team
 permalink: /team/
 ---
-    
+
 {% assign sorted = site.authors | sort: 'name' %}
 | Name | Role  | Github | Discord | Reddit |
 | :--- | :---: | :----: | :-----: | :----: |
