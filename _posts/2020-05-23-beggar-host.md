@@ -48,7 +48,7 @@ E dato che da bravo mendicante e accattone non voglio spendere neanche un centes
 
 
 ## Puro Fronte Fine
-### quanto fa schifo tradure in italiano termini inglesi
+### (quanto fa schifo tradure in italiano termini inglesi)
 [La versione React](https://github.com/vikkio88/ads-react) del gioco, gira tutta in memoria nel browser, e usa `localStorage` per i salvataggi, quindi di per se non ha bisogno di alcuna potenza computazionale server, almeno nella prima iterazione MVP (mai ultimata).
 
 Dirai, hai anche un sito personale, metti la `/build` là e sei a cavallo.
@@ -144,6 +144,5 @@ E, come potete osservare dai vari switch:
 
 
 Credo che per oggi è tutto, nel prossimo articoli altri consigli su come hostare i vostri backend sull'AWS del lavoro mascherandoli come build tools (scherzo).
-
 
 
