@@ -134,7 +134,7 @@ Io, personalmente, lo uso tantissimo e nella maggior parte dei progetti con **re
 "deploy": "mv build/index.html build/200.html && surge --domain scootalite.surge.sh build/",
 ```
 
-in questo modo, posso semplicemente digitare
+In questo modo, posso semplicemente digitare
 ```
 npm run buildDeploy
 ```
