@@ -7,7 +7,7 @@ github: kmfrick
 discord: vaporK#7687
 langs:
   - name: js
-    want: 1
+    self: 1
   - name: python
     self: 2
     want: 3
