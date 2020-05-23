@@ -143,4 +143,4 @@ E, come potete osservare dai vari switch:
 - Rinomino `index.html` in `200.html` in modo tale che tutte le richieste vengano processate dal main script di react e che il routing avvenga client side grazie a `react-router`.
 
 
-Credo che per oggi è tutto, nel prossimo articoli altri consigli su come hostare i vostri backend sull'AWS del lavoro mascherandoli come build tools (scherzo).
+Credo che per oggi sia tutto, nel prossimo articoli altri consigli su come hostare i vostri backend sull'AWS del lavoro mascherandoli come build tools (scherzo).
