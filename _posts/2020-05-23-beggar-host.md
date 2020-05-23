@@ -13,7 +13,7 @@ Come probabilmente ho detto in tutti i post che ho scritto fino ad ora, sono com
 
 > La follia sta nel far sempre la stessa cosa aspettandosi risultati diversi.
 
-Ricerdando un po' mentre scrivevo questo post ho visto che non ci sono nemmeno prove che il padre della relatività abbia mai detto questo, ma prendiamolo come fatto assodato.
+Ricercando un po' mentre scrivevo questo post ho visto che non ci sono nemmeno prove che il padre della relatività abbia mai detto questo, ma prendiamolo come fatto assodato.
 
 La mia personalissima, e spero innocua, **follia** sta nel creare decine di volte lo stesso progetto in diversi linguaggi di programmazione, ogni volta che per motivi personali o di lavoro sono costretto ad impararne uno nuovo.
 
