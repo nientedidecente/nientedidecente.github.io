@@ -124,8 +124,8 @@ vikkio@lemmiwinks [13:33:35] [~/impeto]
 
 Ovviamente esiste anche il comando per rimuovere degli assets, qualora non vi servissero più: `teardown`.
 
-- **Perchè?**
-Cosa Perchè? Che domanada è? Perchè è **gratis**!
+- **Perché?**
+Cosa "Perché?" Che domanda è? Perché è **gratis**!
 
 Io personalmente lo uso tantissimo, e nella maggior parte dei progetti con **react** (creati di solito con *crate-react-app*) aggiungo un piccolo npm script per fare deploy automatico post build:
 
