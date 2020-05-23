@@ -55,7 +55,7 @@ Due nodi associati si dicono *vicini*.
 Ci riprovo.
 Questo è un grafo (immagine da Wikipedia):
 
-![graph]({{site.baseurl}}/assets/img/graph.png){:width="30%"}
+![graph](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/6n-graf.svg/1024px-6n-graf.svg.png){:width="30%"}
 
 In particolare, è un grafo *non diretto* perché gli archi non hanno una direzione, quindi se A è vicino di B allora anche B è vicino di A.
 Se fosse *diretto* gli archi avrebbero delle freccine a uno dei propri terminali e l'associazione tra archi non sarebbe (necessariamente) simmetrica. 

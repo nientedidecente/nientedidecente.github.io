@@ -7,7 +7,7 @@ github: kmfrick
 discord: vaporK#7687
 langs:
   - name: js
-    want: 1
+    self: 1
   - name: python
     self: 2
     want: 3
@@ -22,8 +22,12 @@ langs:
     self: 3
     want: 3
   - name: cpp 
-    ver: [11,13]
+    ver: [98,11,14]
     self: 2
+    want: 3
+  - name: cpp
+    ver: [17,20]
+    self: 1
     want: 3
   - name: lua
     want: 1
