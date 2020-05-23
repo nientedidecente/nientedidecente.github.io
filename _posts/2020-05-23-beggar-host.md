@@ -17,7 +17,7 @@ Ricerdando un po' mentre scrivevo questo post ho visto che non ci sono nemmeno p
 
 La mia personalissima, e spero innocua, **follia** sta nel creare decine di volte lo stesso progetto in diversi linguaggi di programmazione, ogni volta che per motivi personali o di lavoro sono costretto ad impararne uno nuovo.
 
-citando un post nel nostro [Discord](https://discord.gg/8SywyRv), channel **#game-dev-prompts**
+Citando un post nel nostro [Discord](https://discord.gg/8SywyRv), channel **#game-dev-prompts**
 
 > in react: https://github.com/vikkio88/ads-react
 
@@ -144,7 +144,6 @@ E, come potete osservare dai vari switch:
 
 
 Credo che per oggi è tutto, nel prossimo articoli altri consigli su come hostare i vostri backend sull'AWS del lavoro mascherandoli come build tools (scherzo).
-
 
 
 
