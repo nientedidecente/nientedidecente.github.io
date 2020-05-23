@@ -64,7 +64,7 @@ Uno strumento **GRATUITO** che ti permette di hostare static assets su un CDN e 
 
 - **Com'è?**
 
-È carino, per installarlo:
+È carino. Per installarlo:
 ```
 npm i -g surge
 ```
