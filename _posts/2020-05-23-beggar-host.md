@@ -51,9 +51,9 @@ E dato che da bravo mendicante e accattone non voglio spendere neanche un centes
 ### (quanto fa schifo tradure in italiano termini inglesi)
 [La versione React](https://github.com/vikkio88/ads-react) del gioco, gira tutta in memoria nel browser, e usa `localStorage` per i salvataggi, quindi di per se non ha bisogno di alcuna potenza computazionale server, almeno nella prima iterazione MVP (mai ultimata).
 
-Dirai, hai anche un sito personale, metti la `/build` là e sei a cavallo.
+Dirai: _hai anche un sito personale, metti la `/build` là e sei a cavallo._
 
-Risponderei, si ma perchè invece non cercare di far fare il lavoro sporco dell'upload a qualcun'altro?
+Risponderei: _sì ma perché non cercare, invece, di far fare il lavoro sporco dell'upload a qualcun'altro?
 
 ### Impeto
 Introducing **surge**: [Surge.Sh](https://surge.sh).
@@ -144,4 +144,3 @@ E, come potete osservare dai vari switch:
 
 
 Credo che per oggi è tutto, nel prossimo articoli altri consigli su come hostare i vostri backend sull'AWS del lavoro mascherandoli come build tools (scherzo).
-
