@@ -27,8 +27,8 @@ langs:
     want: 3
   - name: cpp
     ver: [17,20]
-	self: 1
-	want: 3
+    self: 1
+    want: 3
   - name: lua
     want: 1
 frameworks:
