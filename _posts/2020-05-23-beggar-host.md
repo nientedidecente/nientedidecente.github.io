@@ -56,7 +56,7 @@ Dirai, hai anche un sito personale, metti la `/build` là e sei a cavallo.
 Risponderei, si ma perchè invece non cercare di far fare il lavoro sporco dell'upload a qualcun'altro?
 
 ### Impeto
-Introducing **surge**, [Surge.Sh](https://surge.sh).
+Introducing **surge**: [Surge.Sh](https://surge.sh).
 
 - **Cos'è?**
 
@@ -144,5 +144,4 @@ E, come potete osservare dai vari switch:
 
 
 Credo che per oggi è tutto, nel prossimo articoli altri consigli su come hostare i vostri backend sull'AWS del lavoro mascherandoli come build tools (scherzo).
-
 
