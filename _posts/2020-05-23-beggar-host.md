@@ -127,7 +127,7 @@ Ovviamente esiste anche il comando per rimuovere degli assets, qualora non vi se
 - **Perché?**
 Cosa "Perché?" Che domanda è? Perché è **gratis**!
 
-Io personalmente lo uso tantissimo, e nella maggior parte dei progetti con **react** (creati di solito con *crate-react-app*) aggiungo un piccolo npm script per fare deploy automatico post build:
+Io, personalmente, lo uso tantissimo e nella maggior parte dei progetti con **react** (creati di solito con *crate-react-app*) aggiungo un piccolo npm script per fare deploy automatico post build:
 
 ```
 "buildDeploy": "GENERATE_SOURCEMAP=false react-scripts build && npm run deploy",
