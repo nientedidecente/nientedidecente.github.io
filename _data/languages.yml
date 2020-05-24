@@ -7,3 +7,6 @@ it:
 jp:
   label: 日本語
   icon: 🇯🇵
+es:
+  label: Español
+  icon: 🇪🇸
