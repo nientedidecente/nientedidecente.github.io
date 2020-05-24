@@ -6,7 +6,18 @@
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
     {%- feed_meta -%}
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
-      {%- include google-analytics.html -%}
+        {%- include google-analytics.html -%}
     {%- endif -%}
-  </head>
-  
+{%comment%} include link tags to help search engines {%endcomment%}
+    {% if page.layout != 'index' %}
+    {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+    {% if posts.size == 0 %}
+        {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+    {% endif %}
+    {% if posts.size > 1 %}
+        {% for post in posts %}
+    <link rel="alternate" hreflang="{{post.lang}}" href="{{ site.base-url }}{{ post.url }}" />
+        {% endfor %}
+    {% endif %}
+    {% endif %}
+</head>

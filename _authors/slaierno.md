@@ -66,9 +66,11 @@ misc:
     want: 1
   - name: audio
     want: 2
-
+lang: it
+lang-ref: slaierno
 ---
 
-This page is work in progress!
+Questa è la mia pagina personale.
 
+⚠ _Lavori in corso._ ⚠
 
