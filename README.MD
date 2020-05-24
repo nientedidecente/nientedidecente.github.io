@@ -49,8 +49,7 @@ Content of my personal page in _markdown_ **syntax**
 * `reddit`: your reddit username
 * `langs`, `frameworks` and `misc`: your skills, refer to the next section.
 
-`layout`, `short_name` and `name` are mandatory. Everything else is optional.
-
+`layout`, `short_name` and `name` are mandatory. Everything else is optional. Note that in case of **multilanguage author pages**, only this three mandatory variables and the language-specific ones (`lang` and `lang-ref`) are necessary. Everything else will be retrieved from the default-language (i.e. Italian) author page.  
 At the end of the page content, a skill table and a list of your posts will be shown. The skill table is compiled with the skills in your YAML frontmatter. The post list is retrieved by your `short_name`, so be sure to put _that_ as post's `author`.
 
 Refer to `_authors/slaierno.md` as an example to build your own author page.
@@ -121,6 +120,22 @@ If you need to use LaTeX style math notation, add {% include mathjs %} to your p
 You can then add equations by enclosing them in double dollar signs, like so: $$ a + b = c $$ 
 
 An example post where you can refer is `_posts/example.markdown`.
+
+## Multilanguage support
+
+The blog support multiple languages for pretty much everything. The defuault language is Italian, for every other language you may:
+* add a subfolder (project root included) named with the language short name (refer to `_data/languages.yml)
+* add to the frontmatter two variables, `lang`, indicating the languages, and `lang-ref`, representing a label for that page.
+
+Posts will be listed on a language base. E.g. in you english author page you will not see your non-english posts.
+
+A user can change the language for a page (if available) via the links on the footer of suche page.
+
+NOTE: multilanguage support is tricky. If you note anything wrong, please issue a bug!
+
+### Adding a language
+
+Edit `_data/languages.yml` and `_data/translations.yml` accordingly. _Remember the emojis!_
 
 # How to set up the blog and test it by yourself?
 
