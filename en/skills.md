@@ -1,5 +1,6 @@
 ---
 title: Skills
+lang: en
 lang-ref: skills
 ---
 

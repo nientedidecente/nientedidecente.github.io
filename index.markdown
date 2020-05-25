@@ -4,6 +4,8 @@
 
 layout: home
 title: Niente di Decente Games
+lang: it
+lang-ref: index-page
 ---
 
 > Niente di decente

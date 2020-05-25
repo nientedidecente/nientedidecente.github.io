@@ -1,0 +1,57 @@
+<footer class="site-footer h-card">
+    <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+    <div class="wrapper">
+
+        <h2 class="footer-heading">{{ site.title | escape }}</h2>
+
+        <div class="footer-col-wrapper">
+            <div class="footer-col footer-col-1">
+                <ul class="contact-list">
+                    <li class="p-name">
+                        {%- if site.author -%}
+                        {{ site.author | escape }}
+                        {%- else -%}
+                        {{ site.title | escape }}
+                        {%- endif -%}
+                    </li>
+                    {%- if site.email -%}
+                    <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                    {%- endif -%}
+                </ul>
+            </div>
+
+            <div class="footer-col footer-col-2">
+                {%- include social.html -%}
+            </div>
+
+            <div class="footer-col footer-col-3">
+                <p>{{- site.description | escape -}}</p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+{% case page.layout %}
+    {% when "author" %}
+      {% assign list = site.authors %}
+    {% when "post" %}
+        {% assign list = site.posts %}
+    {% else %}
+        {% assign list = site.pages %}
+{% endcase %}
+
+{% if list and page.lang-ref %}
+    {% assign list = list | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+    {% if list.size > 1 %}
+    <footer class="lang-options">
+        <em>{{ site.data.translations['differentLanguage'][page.lang] }}:</em>
+        <ul>
+        {% for el in list %}
+        <li><a title="{{ site.data.translations['viewIn'][page.lang] }} {{ site.data.languages[el.lang].label }}" class="{{el.lang}}" href="{{ site.base-url }}{{ el.url }}">{{ site.data.languages[el.lang].icon }} {{ site.data.languages[el.lang].label }}</a></li>
+        {% endfor %}
+        </ul>
+    </footer>
+    {% endif %}
+{% endif %}

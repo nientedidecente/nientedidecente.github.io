@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Sobre nosotros
+lang: es
 lang-ref: about-page
 ---
 

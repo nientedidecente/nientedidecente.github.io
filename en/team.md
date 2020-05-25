@@ -1,8 +1,7 @@
 ---
 layout: page
 title: Team
-permalink: /team/
-lang: it
+lang: en
 lang-ref: team-page
 ---
 
