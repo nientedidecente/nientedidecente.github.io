@@ -79,10 +79,10 @@ Poco prima che iniziassi la scuola, mio padre comprò finalmente un PC. "Per aiu
 Oltre ai videogiochi, l'intero mondo informatico mi ha sempre affascinato. Inizialmente giocavo al sistemista casalingo, poi durante il liceo mi avvicinai al mondo della programmazione e decisi che era troppo divertente per abbandonarlo.
 
 Dopo una piatta parentesi salentina durante la laurea triennale, ho concluso gli studi di Ingegneria Informatica all'Università di Bologna, dove mi sono principalmente concentrato sulla computer vision, passando per ricerca operativa, intelligenza artificiale ed FPGA. Mi sono anche interessato alla teoria dei linguaggi di programmazinoe.  
-Quindi, in perfetta coerenza con i miei studi in cui ho evitato le reti come Neo con le pallotole, ora lavoro nelle TLC e sviluppo software per le infrastrutture LTE e 5G dandoci dentro con il recentissimo linguaggio di programmazione [C](https://en.wikipedia.org/wiki/C_\(programming_language\)).
+Quindi, in perfetta coerenza con i miei studi durante i quali ho evitato le reti come Neo con le pallotole, ora lavoro nelle TLC e sviluppo software per le infrastrutture LTE e 5G dandoci dentro con il recentissimo linguaggio di programmazione [C](https://en.wikipedia.org/wiki/C_\(programming_language\)).
 
 E i videogiochi? Sono rimasti lì, accanto a tutto il percorso e sono sempre parte integrante della mia quotidianità.
 
-Nel tempo libero tento di portare avanti un progettino in C++17/20, perché è troppo allettante giocare un linguaggio tanto arzigogolato per poi bestemmiare verso l'ennesimo errore con i template. Sono masochista.
+Nel tempo libero tento di portare avanti un piccolo progetto in C++17/20, perché è troppo allettante giocare un linguaggio tanto arzigogolato per poi bestemmiare verso l'ennesimo errore con i template. Sono masochista.
 
-Sul mio [GitHub](https://www.github.com/slaierno) potete trovare il mio unico progettino pubblico, per gli altri 19 ~~sono in uno stato troppo incompleto~~ *il mondo non è ancora pronto*.
+Sul mio [GitHub](https://www.github.com/slaierno) potete trovare il mio unico progetto pubblico, per gli altri 19 ancora privati, ~~sono in uno stato troppo incompleto~~ *il mondo non è ancora pronto*.
