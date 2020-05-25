@@ -10,47 +10,61 @@ layout: default
 <h2>Skillset</h2>
 
 {%- assign langs_framework_misc = "langs,frameworks,misc" | split: "," -%}
+{%- assign split_size = 5 -%}
+{%- assign colwidth = 100 | divided_by: split_size -%}
 
 {%- comment -%} Get the skills from the default language page {%- endcomment -%}
 {% for stype in langs_framework_misc -%}
-{%- assign default_language = site.defaults[0].values.lang -%}
-{%- comment -%} Addressing by short_name avoid issues in case a person has different names in different languages (yes, this is a thing) {%- endcomment -%}
-{%- assign base_author = site.authors | where: "lang", default_language | where: "short_name", page.short_name -%}
-<h3> {{ site.data.skillset["titles"][stype] }} </h3>
+    <h3> {{ site.data.skillset["titles"][stype] }} </h3>
 
-<table>
-  <tr> 
-    {% for skill in base_author[0][stype] -%}
-    <th colspan="2">
-      {{ site.data.skillset[stype][skill.name].name }}
-      {%- if skill.ver -%}
-        ({{skill.ver | join: ","}})
-      {%- endif -%}
-    </th>
-    {%- endfor %}
-  </tr>
-  <tr>
-    {% for skill in base_author[0][stype] -%}
-    {% if skill.self and skill.want %} {% assign cs = 1 %} {% else %} {% assign cs = 2 %} {% endif %}
-    {% if skill.self %}<th colspan="{{cs}}">Self</th>{% endif %}
-    {% if skill.want %}<th colspan="{{cs}}">Want</th>{% endif %}
-    {%- endfor %}
-  </tr>
-  <tr>
-    {% for skill in base_author[0][stype] -%}
-    {% if skill.self and skill.want %} {% assign cs = 1 %} {% else %} {% assign cs = 2 %} {% endif %}
-    {% if skill.self %}<td colspan="{{cs}}">{{skill.self}}</td>{% endif %}
-    {% if skill.want %}<td colspan="{{cs}}">{{skill.want}}</td>{% endif %}
-    {%- endfor %}
-  </tr>
-</table>
+    {%- assign default_language = site.defaults[0].values.lang -%}
+    {%- comment -%} Addressing by short_name avoid issues in case a person has different names in different languages (yes, this is a thing) {%- endcomment -%}
+    {%- assign base_author = site.authors | where: "lang", default_language | where: "short_name", page.short_name -%}
 
+    {%- comment -%} ceil(a/b) = (a+(b-1))/b with integer division, avoiding floating point {%- endcomment -%}
+    {% assign splits = base_author[0][stype].size | plus: split_size | minus: 1 | divided_by: split_size %}
+
+    {% for i in (1..splits) -%}
+        {%- assign start_idx = forloop.index0 | times: split_size -%}
+        {%- assign length = base_author[0][stype].size | minus: start_idx -%}
+        {%- if length >= split_size -%}
+            {%- assign w = 100 -%}
+        {%- else -%}
+            {%- assign w = colwidth | times: length -%}
+        {%- endif -%}
+        <table style="width: {{w}}%">
+            <tr>
+                {% for skill in base_author[0][stype] offset: start_idx limit: split_size -%}
+                    <th colspan="2" style="width: {{colwidth}}%;">
+                        {{ site.data.skillset[stype][skill.name].name }}
+                        {%- if skill.ver -%}
+                            ({{skill.ver | join: ","}})
+                        {%- endif -%}
+                    </th>
+                {%- endfor %}
+            </tr>
+            <tr>
+                {% for skill in base_author[0][stype] offset: start_idx limit: split_size -%}
+                {% if skill.self and skill.want %} {% assign cs = 1 %} {% else %} {% assign cs = 2 %} {% endif %}
+                {% if skill.self %}<th colspan="{{cs}}">Self</th>{% endif %}
+                {% if skill.want %}<th colspan="{{cs}}">Want</th>{% endif %}
+                {%- endfor %}
+            </tr>
+            <tr>
+                {% for skill in base_author[0][stype] offset: start_idx limit: split_size -%}
+                {% if skill.self and skill.want %} {% assign cs = 1 %} {% else %} {% assign cs = 2 %} {% endif %}
+                {% if skill.self %}<td colspan="{{cs}}">{{skill.self}}</td>{% endif %}
+                {% if skill.want %}<td colspan="{{cs}}">{{skill.want}}</td>{% endif %}
+                {%- endfor %}
+            </tr>
+        </table>
+    {% endfor %}
 {% endfor %}
 
 <h2>Posts ({{site.data.languages[page.lang].label}}) </h2>
 <ul>
-  {% assign filtered_posts = site.posts | where: 'author', page.short_name | where: "lang", page.lang %}
-  {% for post in filtered_posts %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
+    {% assign filtered_posts = site.posts | where: 'author', page.short_name | where: "lang", page.lang %}
+    {% for post in filtered_posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
 </ul>
