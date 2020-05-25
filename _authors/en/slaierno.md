@@ -8,7 +8,7 @@ lang-ref: slaierno
 
 Born in 1990, raised as a [*terrone*](https://en.wikipedia.org/wiki/Terrone) and [bolognese](https://en.wikipedia.org/wiki/Bologna) by choice. I am one of those kids that always had a computer to play with.
 
-My house first computer was a [Commodore Amiga 500](https://en.wikipedia.org/wiki/Amiga_500). There is a picture of when I was a year and half old where I am on my father's lap while he was playing a videogame. Another picture, a year later, I was next to him, with the player 2 joystick controlling a jeep a giving support to my father's helicopter in [Silkworm](https://en.wikipedia.org/wiki/Silkworm_\(video_game\)).
+The first computer in my hous was a [Commodore Amiga 500](https://en.wikipedia.org/wiki/Amiga_500). There is a picture of when I was a year and half old where I am on my father's lap while he was playing a videogame. Another picture, a year later, I was next to him, with the player 2 joystick controlling a jeep and giving support to my father's helicopter in [Silkworm](https://en.wikipedia.org/wiki/Silkworm_\(video_game\)).
 
 Just before my school start, my father bought a PC. "To help me with my studies" he said to my mother. [Giochi per il Mio Computer](https://en.wikipedia.org/wiki/Giochi_per_il_mio_computer) was an encyclopedia, I guess. And [Tomb Raider](https://en.wikipedia.org/wiki/Tomb_Raider_\(1996_video_game\)) was there to help me with my history assignments, right?
 
