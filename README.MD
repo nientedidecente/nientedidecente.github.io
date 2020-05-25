@@ -49,7 +49,7 @@ Content of my personal page in _markdown_ **syntax**
 * `reddit`: your reddit username
 * `langs`, `frameworks` and `misc`: your skills, refer to the next section.
 
-`layout`, `short_name` and `name` are mandatory. Everything else is optional. Note that in case of **multilanguage author pages**, only this three mandatory variables and the language-specific ones (`lang` and `lang-ref`) are necessary. Everything else will be retrieved from the default-language (i.e. Italian) author page.  
+`layout`, `short_name` and `name` are mandatory. Everything else is optional. Note that in case of **multilanguage author pages**, only these three mandatory variables and the language-specific ones (`lang` and `lang-ref`) are necessary. Everything else will be retrieved from the default-language (i.e. Italian) author page.  
 At the end of the page content, a skill table and a list of your posts will be shown. The skill table is compiled with the skills in your YAML frontmatter. The post list is retrieved by your `short_name`, so be sure to put _that_ as post's `author`.
 
 Refer to `_authors/slaierno.md` as an example to build your own author page.
@@ -78,7 +78,7 @@ langs:
     want: 2
 ```
 Means that the author has S/W=(2,3) for C++11 and C++14 and S/W=(1,2) for the other available versions (98, 17, 20).  
-Beware that anytime you put a version-specific entry, suche values will override the existing ones. E.g.
+Beware that anytime you put a version-specific entry, such values will override the existing ones. E.g.
 ```yaml
 langs:
   - name: cpp
@@ -123,15 +123,15 @@ An example post where you can refer is `_posts/example.markdown`.
 
 ## Multilanguage support
 
-The blog support multiple languages for pretty much everything. The defuault language is Italian, for every other language you may:
+The blog support multiple languages for pretty much everything. The default language is Italian, for every other language you may:
 * add a subfolder (project root included) named with the language short name (refer to `_data/languages.yml)
 * add to the frontmatter two variables, `lang`, indicating the languages, and `lang-ref`, representing a label for that page.
 
-Posts will be listed on a language base. E.g. in you english author page you will not see your non-english posts.
+Posts will be listed on a language basis. E.g. in you english author page you will not see your non-english posts.
 
-A user can change the language for a page (if available) via the links on the footer of suche page.
+A user can change the language for a page (if available) via the links on the footer of such page.
 
-NOTE: multilanguage support is tricky. If you note anything wrong, please issue a bug!
+NOTE: multilanguage support is tricky. If you notice anything wrong, please issue a bug!
 
 ### Adding a language
 

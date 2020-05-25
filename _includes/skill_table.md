@@ -8,9 +8,9 @@
 
 <h1> {{ site.data.skillset["titles"][stype] }} </h1>
 
-    {%- for skill_ in site.data.skillset[stype] -%}
-        {%- assign skill_name = skill_[0] -%} {%- comment -%} skill name we are searching for {%- endcomment -%}
-        {%- assign skill = skill_[1] -%} {%- comment -%} possible skill-related skills {%- endcomment -%}
+    {%- for skill_entry in site.data.skillset[stype] -%}
+        {%- assign skill_name = skill_entry[0] -%} {%- comment -%} skill name we are searching for {%- endcomment -%}
+        {%- assign skill = skill_entry[1] -%} {%- comment -%} possible skill details {%- endcomment -%}
 
         {%- comment -%} Search if there is at least an author holding skills for this skill
                         and continues to next skill if there is no one {%- endcomment -%}
