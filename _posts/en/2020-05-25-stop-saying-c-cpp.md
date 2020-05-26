@@ -63,6 +63,8 @@ If you answered anything but:
 
 ...you were wrong.
 
+----
+
 But let us say that we want to be _pedantic_, i.e. strictly following the ISO specifications. You can just add `-pedantic` to any compiler (but MSVC, more on that later).  
 The answer are now:
 
@@ -91,7 +93,7 @@ But...what are VLAs? They are just variable-length arrays (*sic!*) allocated on 
 
 Well, if you are accostumed to MSVC or to C99 code, or you just thought that knowing C++ code was enough to write C code...here we are.
 
-In C90 you could not declare variable in the loop declaration. And that is not all, you are only allowed to declare variable anywhere but at the very beginning of a block. Every declaration must happen before any statement.
+In C90 you could not declare variable in the loop declaration. And that is not all, you are only allowed to declare variables at the very beginning of a block. Every declaration must happen before any statement.
 
 This is not a valid C90 snippet either:
 
@@ -110,7 +112,7 @@ Now, here is the cursed code adjusted for C90:
 
 <iframe width="100%" height="400px" src="https://godbolt.org/e?hideEditorToolbars=true#g:!((g:!((g:!((h:codeEditor,i:(fontScale:14,j:1,lang:___c,selection:(endColumn:15,endLineNumber:5,positionColumn:15,positionLineNumber:5,selectionStartColumn:15,selectionStartLineNumber:5,startColumn:15,startLineNumber:5),source:'%23include+%3Calloca.h%3E%0Aint+bar(int*+arr,+const+int+size)+%7B+return+0%3B+%7D%0A%0Aint+foo(const+int+size)+%7B%0A++++int+i+%3D+0%3B%0A++++int+*arr+%3D+alloca(sizeof(int)*size)%3B%0A++++for(%3B+i+%3C+size%3B+i%2B%2B)+arr%5Bi%5D+%3D+0%3B%0A++++return+bar(arr,+size)%3B%0A%7D%0A%0Aint+main()+%7B+return+0%3B%7D'),l:'5',n:'0',o:'C+source+%231',t:'0')),k:100,l:'4',m:48.18288393903868,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:cg101,filters:(b:'0',binary:'1',commentOnly:'0',demangle:'0',directives:'0',execute:'1',intel:'0',libraryCode:'1',trim:'0'),fontScale:14,j:1,lang:___c,libs:!(),options:'-pedantic+-Werror+-std%3Dc90',selection:(endColumn:1,endLineNumber:1,positionColumn:1,positionLineNumber:1,selectionStartColumn:1,selectionStartLineNumber:1,startColumn:1,startLineNumber:1),source:1),l:'5',n:'0',o:'x86-64+gcc+10.1+(Editor+%231,+Compiler+%231)+C',t:'0')),header:(),l:'4',m:51.81711606096131,n:'0',o:'',s:0,t:'0')),l:'3',n:'0',o:'',t:'0')),version:4"></iframe>
 
-Confused? Well, that's for a good reason. Maybe you think that there C90 is old and deprecated...well, in 2015 I had to work with C90 code written in that very year. We soon migrated to C99...but still I had to deal with it for a while.
+Confused? Well, that's for a good reason. Maybe you think that C90 is old and deprecated...well, in 2015 I had to work with C90 code written in that very year. We soon migrated to C99...but still I had to deal with it for a while.
 
 _NOTE:_ if we want to be _really_ pedantic, in C11 VLAs are optional, not mandatory. But I did not manage to find any C11 compiler not supporting them. We were lucky this time.
 
@@ -137,7 +139,7 @@ First of all, clang has [`__attribute__((overloadable))`](https://clang.llvm.org
 
 But we were `-pedantic` right? 
 
-1. Does ISO C support functino overload?
+1. Does ISO C support function overload?
 
 Of course...
 
@@ -156,19 +158,19 @@ Have you ever heard of `_Generic` selection? Are you familiar with such syntax?
 
 If not, you do not know C11. (And of course, this is NOT valid C++ code, no matter how many flags you set)
 
-Now, if we stay in the realm of C, which is such a slow-changing language, if you just write that you know "C" is ok. Maybe you are not familiar with C11 features, but since the only new _syntax_ you should learn is the `_Generic` one...you can adjust pretty quickly. If you are an experienced C99 developer and I want to hire someone for my C11 project, you are pretty much as valuable a C11 developer with the same experience.
+Now, if we stay in the realm of C, which is such a slow-changing language, if you just write that you know "C" is ok. Maybe you are not familiar with C11 features, but since the only new _syntax_ you should learn is the `_Generic` one...you can adjust pretty quickly. If you are an experienced C99 developer and I want to hire someone for my C11 project, you are pretty much as valuable as a C11 developer with the same experience.
 
 ## C++
 
-Ok, maybe you are a decently-experienced C developer, and during a college course you learned about object and used them with a C++ compiler.
+Ok, maybe you are a decently-experienced C developer, and during a college course you learned about classes, objects and used them with a C++ compiler (maybe [Dev-C++](https://en.wikipedia.org/wiki/Dev-C%2B%2B)!).
 
-You know what a class and a method are. But since you C++ course, you moved into Java, C#, or something else "high level". But since you know about OOP, you know C and you worked with C++ in the past, you write that "C++" entry in your CV.
+You know what a class and a method are. But since your C++ course, you moved into Java, C#, or something else "higher level". And since you know about OOP, you know C and you worked with C++ in the past, you write that "C++" entry in your CV.
 
-If someone read that CV, he would immediately know that you do *not* know C++ and that maybe you know a little bit of C++98 mixed with C. Or, if lucky enough, a little bit of C++11.
+If someone read that CV, they would immediately know that you do *not* know C++ and that maybe you know a little bit of C++98 mixed with C. Or, if lucky enough, a little bit of C++11.
 
 Do you remember that I kept writing C++_s_ instead of just C++? Now you will understand why.
 
-Here is a table of some features available as of C++20, without any specific order:
+Here is a list of some features available as of C++20, without any specific order (count how many of them you know):
 * Classes and objects
 * Templates
 * `constexpr`
@@ -184,7 +186,7 @@ Here is a table of some features available as of C++20, without any specific ord
 * Structured binding
 * `auto`
 
-How many of them do you know about? Here it is a little table with your score:
+How was your score? Here is a little table to look at:
 
 | Score | Comment                                                           |
 | ----- | ----------------------------------------------------------------- |
@@ -198,7 +200,7 @@ How many of them do you know about? Here it is a little table with your score:
 
 Now, you may think that I am being overly pedantic, that you can move from a version to the other without a little bit of effort.
 
-While that is true, it is true for *any* language. And if I want to hire someone already experienced with C++17, your knowledge of a subset of C++98 is by no means enough. Because now, C++ code can look like:
+While that is true, it is true for *any* language. And if I need to hire someone already experienced with C++17, your knowledge of a subset of C++98 is by no means enough. Because nowaday, C++ code can look like:
 
 ```c++
 template<typename T>
@@ -216,7 +218,7 @@ int foo() {
 }
 ```
 
-And such a snippet will generate only four line of assembly, only for the `foo()` function, and it will return just 4, without any run-time calculation. Everything is done at compile-time. **Without any optimization activated.** It is all compile-time by standard, there is nothing compiler-related.
+And such a snippet will generate only four line of assembly, only for the `foo()` function, and it will return just 4, without any run-time calculation. Everything is done at compile-time. **Without any optimization activated.** It is all compile-time by standard, every compiler *must* generate such assembly.
 
 Here it is, built with GCC 10.1, with `-std=c++20 -fconcepts -O0 -pedantic -Werror`
 
@@ -232,13 +234,21 @@ I hope that you now understand how much difference there is between C and C++ an
 
 Of course, it is not necessary to write every single version of the language in your CV. It is reasonable e.g. to say you know C++11/14 or C++17/20.
 
-And it is perfectly fine to say that you just know C++98 because you attended that OOP crash course during college.
+And it is perfectly fine to say that you just know C++98 because you attended that OOP crash course during college. If you are versed in other languages and experienced overall developer, you could be an equally valuable C++20 developer with a little bit of effort.
 
 But it is also important to state what you know and to know what you do not know (how many time did I say the word "know" until now?). Because maybe you cannot go up to the newest version of C++, but it also likely that you are not able to go *down* to the oldest version.
 
-If I were to write C++98 code, I would just switch to C. Not because C++98 is a bad language, but because I work mainly with C (in my job) and C++17/20 (in my side projects). And I honestly do not know what is my toolset in C++98. Do I have non-type template parameters? What parts of STL are available? Smart pointers are not present...can I use [boost](https://www.boost.org) for them? Delegate constructors are not available...right?
+If I ever found myself stuck with an old compiler limited to C++98, I would just switch to C. Not because C++98 is a bad language, but because I work mainly with C (for a living) and C++17/20 (in my side projects). And I honestly do not know what would my toolset be in C++98. Do I have non-type template parameters? What parts of STL are available? Smart pointers are not present...can I use [boost](https://www.boost.org) for them? Delegate constructors are not available...right?
 
 In the end, just a suggestion: if you need to learn C++ in order to enter into the gamedev scene, learn a *modern* C++ and jump right into C++17, at least.
+
+* [Godot](https://godotengine.org) builds flawlessly with C++17.
+* [Unreal Engine 4](https://www.unrealengine.com/en-US/) too (well, maybe a little less flawlessly)
+
+Want some open-source stuff? We've got you covered!
+* [OpenRCT2](https://github.com/OpenRCT2/OpenRCT2#31-building-prerequisites) _requires_ C++17!
+* [Halley](https://github.com/amzeratul/halley) is another very interesting engine built upon C++17.
+* [`EnTT`](https://github.com/skypjack/entt) requires C++17 too. Well there is the `cpp14` tag, but last commit was [Sep 2, 2018](https://github.com/skypjack/entt/commits/cpp14).
 
 ## TL;DR
 
