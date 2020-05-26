@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Please, stop saying you know C/C++!"
-date:   2020-05-16 00:00:00 +0200
+date:   2020-05-26 16:00:00 +0200
 categories: c cpp development
 series: c cpp
 author: slaierno
@@ -18,7 +18,10 @@ Ok, relax. Take a deep breath. Now, listen (read) to me: _there is no such langu
 You may know one of them, you may know all of them, but saying "C/C++" just doesn't make any sense.  
 Would you ever write in your résumé that you know, e.g., "C/Objective-C"? Or "Java/Kotlin"? If your answer is _"of course not, they are different languages!"_, such answer is correct and you should stop writing "C/C++". Put a damn comma between two different languages.
 
-Hold on, I can sense some of you saying "but in _my_ case it makes sense because...". The general answer is that it would also make sense to write "C, C++". Maybe in your very own case it makes sense...I will address that at the appendix of this article. Please, bear with me until the end.
+Hold on, I can sense some of you saying 
+> But in _my_ case it makes sense because...
+ 
+The general answer is that it would also make sense to write "C, C++". Maybe in your very own case it makes sense...I will address that in the appendix of this article. Please, bear with me until the end.
 
 ### Why this article
 
@@ -26,8 +29,6 @@ It happened countless times that I saw resumes, curricula, presentation pages an
 
 The formere where _not_ C++ developers. the latter where _not_ C developers. And I will explain why is that so.  
 It is not a crime to not know a language or to know just a little bit of it. But you should at least know what you know and what you do not know.
-
-A lot of this confusion comes from schools and university, so it is very likely not your fault.
 
 ### What does it have to do with videogames?
 
