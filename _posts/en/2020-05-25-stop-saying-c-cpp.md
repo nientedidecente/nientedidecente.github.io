@@ -13,10 +13,10 @@ lang-ref: stop-saying-c-cpp
 
 ## Preface
 
-Ok, relax. Take a deep breath. Now, listen (read) to me: _there is no such language as C/C++_. There is the C, there _are_ the C++_s_ and they are _all different languages_. 
+Ok, relax. Take a deep breath. Now, listen to (read) me: _there is no such language as C/C++_. There is C, there _are_ C++_s_ and they are _all different languages_. 
 
-You may know one of them, you may know all of them, but saying tou know "C/C++" just doesn't make any sense.  
-Would you ever write in your résumé that you know, e.g., "C/Objective-C"? Or "Java/Kotlin"? If your answer is _"of course not, they are different languages!"_, such answer is correct and you should stop writing "C/C++". Put a damn comma between two different languages.
+You may know one of them, you may know all of them, but saying you know "C/C++" just doesn't make any sense.  
+Would you ever write in your résumé that you know, e.g., "C/Objective-C"? Or "Java/Kotlin"? If your answer is _"of course not, they are different languages!"_, such an answer is correct and you should stop writing "C/C++". Put a damn comma between two different languages.
 
 Hold on, I can sense some of you saying:  
 > But in _my_ case it makes sense because...
@@ -94,9 +94,9 @@ But...what are VLAs? They are just variable-length arrays (*sic!*) allocated on 
 
 ...uh‽‽‽
 
-Well, if you are accostumed to MSVC (in C++ mode) or to C99 code, or you just thought that knowing C++ code was enough to write C code...here we are.
+Well, if you are accustomed to MSVC (in C++ mode) or to C99 code, or you just thought that knowing C++ code was enough to write C code...here we are.
 
-In C90 you could not declare variable in the loop declaration. And that is not all, you are only allowed to declare variables at the very beginning of a block. Every declaration must happen before any statement.
+In C90 you could not declare variables inside a loop declaration. And that is not all, you are only allowed to declare variables at the very beginning of a block. Every declaration must happen before any statement.
 
 This is not a valid C90 snippet either:
 
@@ -217,9 +217,9 @@ Here it is, built with `gcc` 10.1, with `-std=c++20 -fconcepts -O0 -pedantic -We
 
 <iframe width="100%" height="500px" src="https://godbolt.org/e?hideEditorToolbars=true#g:!((g:!((g:!((h:codeEditor,i:(fontScale:14,j:1,lang:c%2B%2B,selection:(endColumn:2,endLineNumber:13,positionColumn:2,positionLineNumber:13,selectionStartColumn:2,selectionStartLineNumber:13,startColumn:2,startLineNumber:13),source:'template%3Ctypename+T%3E%0Aconcept+Meowable+%3D+requires(T+a)+%7B+a.meow()%3B+%7D%3B%0A%0Atemplate%3CMeowable+...Args%3E%0Aconsteval+int+meow_count(Args%26%26...+args)+%7B%0A++++return+(args.meow()+%2B+...)%3B%0A%7D%0A%0Astruct+Cat+%7B+constexpr+int+meow()+%7B+return+1%3B+%7D+%7D%3B%0A%0Aint+foo()+%7B%0A++++return+meow_count(Cat%7B%7D,+Cat%7B%7D,+Cat%7B%7D,+Cat%7B%7D)%3B%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:100,l:'4',m:50,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g101,filters:(b:'0',binary:'1',commentOnly:'0',demangle:'0',directives:'0',execute:'1',intel:'0',libraryCode:'1',trim:'0'),fontScale:14,j:1,lang:c%2B%2B,libs:!(),options:'-std%3Dc%2B%2B20+-fconcepts+-O0+-pedantic+-Werror',selection:(endColumn:1,endLineNumber:1,positionColumn:1,positionLineNumber:1,selectionStartColumn:1,selectionStartLineNumber:1,startColumn:1,startLineNumber:1),source:1),l:'5',n:'0',o:'x86-64+gcc+10.1+(Editor+%231,+Compiler+%231)+C%2B%2B',t:'0')),header:(),l:'4',m:50,n:'0',o:'',s:0,t:'0')),l:'3',n:'0',o:'',t:'0')),version:4"></iframe>
 
-That is not anything remotely similar to what a C++ developer could have seen in the '90s. It's a whole different monstrousity, whether it is a good or a bad thing.
+That is not anything remotely similar to what a C++ developer could have seen in the '90s. It's a whole different monstrosity, whether it is a good or a bad thing.
 
-To be honest, that is nothing similar to C++14 code either.
+To be honest, that does not look anything like C++14 code either.
 
 ## Postface
 
@@ -233,7 +233,7 @@ But it is also important to state what you know and to know what you do not know
 
 If I ever found myself stuck with an old compiler limited to C++98, I would just switch to C. Not because C++98 is a bad language, but because I work mainly with C (for a living) and C++17/20 (in my side projects). And I honestly do not know what would my toolset be in C++98. Do I have non-type template parameters? What parts of STL are available? Smart pointers are not present...can I use [boost](https://www.boost.org) for them? Delegate constructors are not available...right?
 
-In the end, just a suggestion: if you need to learn C++ in order to enter into the gamedev scene, learn a *modern* C++ and jump right into C++17, at least. Even C++20 given that it a complete standard and all the major compilers' support is reaching the final stages.
+In the end, just a suggestion: if you need to learn C++ in order to enter the gamedev scene, learn a *modern* C++ and jump right into C++17, at least. Even C++20 given that it a complete standard and all the major compilers' support is reaching the final stages.
 
 Here some C++17-ready game engines:
 

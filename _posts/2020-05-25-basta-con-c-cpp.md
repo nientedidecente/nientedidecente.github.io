@@ -130,7 +130,7 @@ Be'...no. Non ancora.
 
 Ecco un'altra domanda.
 
-1. Il C supporta l'overload.
+1. Il C supporta l'overload?
 
 La risposta, di nuovo, è:
 
@@ -142,7 +142,7 @@ Innanzitutto, clang ha [`__attribute__((overloadable))`](https://clang.llvm.org/
 
 Ma eravamo `-pedantic` giusto?
 
-1. L'ISO C supporta l'overload.
+1. L'ISO C supporta l'overload?
 
 Ovviamente...
 
