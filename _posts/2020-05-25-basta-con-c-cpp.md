@@ -189,7 +189,7 @@ Ecco una lista di qualche _feature_ disponibile ad oggi, con il C++20, senza nes
 * Structured binding
 * `auto` (non nel senso di _automatic storage_)
 
-Quanti punti hai fatto? Se meno di 8, non conoscete completamente nemmeno il C++11. Inoltre, considerà che queste caratteristiche sono state introdotte in diverse versioni, quindi avrai a disposizione un sottoinsieme diverso per ogni versione scelta.
+Quanti punti hai fatto? Se meno di 8, non conosci completamente nemmeno il C++11. Inoltre, considera che queste caratteristiche sono state introdotte in diverse versioni, quindi avrai a disposizione un sottoinsieme diverso per ogni versione scelta.
 
 Potresti pensare che sono troppo pignolo, e che puoi tranquillamente muovervi da una versione all'altra con un po' di sforzo.
 
