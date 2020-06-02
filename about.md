@@ -27,6 +27,6 @@ Per ora siamo ancora in fase embrionale, abbiamo messo su:
 
 ## Cosa vogliamo?
 
-Lo scopo principale di qualsiasi community è ovviamente quello di socializzare con persone con interessi simili, la nostra community inoltre, si prefissa come obbiettivo quello di creare un piccolo hub virtuale per ospitare gente che vuole creare video game o imparare a farlo, collaborando.
+Lo scopo principale di qualsiasi community è ovviamente quello di socializzare con persone con interessi simili. La nostra community, inoltre, si prefissa come obiettivo quello di creare un piccolo hub virtuale per ospitare chi vuole creare videogiochi o imparare a farlo, collaborando.
 
 Non importa che tu sappia programmare o meno, l'importante è che tu condivida la nostra passione.
