@@ -19,7 +19,7 @@ More info in [here](./team).
 
 We are still working on it, at the moment we have setup:
 
-- A [Discord](https://discord.gg/ysJUrSm) server, where we all hangout most of the time.
+- A [Discord](https://discord.gg/ysJUrSm) server, where we all hang out most of the time.
 
 - A [GitHub](https://github.com/nientedidecente) org, where we plan to collaborate over gamedev projects.
 
