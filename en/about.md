@@ -29,6 +29,6 @@ We are still working on it, at the moment we have setup:
 
 The aim of any community is obviously to hang out and collaborate with people with same interests.
 
-Our community is no different, and aside the basic, we have the main aim of creating a small virtual hub to get together people who wants to create videogames or people who wants to learn how to do one collaborating on existing projects.
+Our community is no different, and aside from the basics, our main aim is creating a small virtual hub to get together people who want to create videogames, or learn how to by collaborating on existing projects.
 
 It does not really matter if you know how to code or not, the only prerequisite is that you need to share our same passion.
