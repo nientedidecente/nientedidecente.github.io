@@ -25,7 +25,7 @@ Per ora siamo ancora in fase embrionale, abbiamo messo su:
 
 - Questo blog su GitHub Pages.
 
-## Che Vogliamo?
+## Cosa vogliamo?
 
 Lo scopo principale di qualsiasi community è ovviamente quello di socializzare con persone con interessi simili, la nostra community inoltre, si prefissa come obbiettivo quello di creare un piccolo hub virtuale per ospitare gente che vuole creare video game o imparare a farlo, collaborando.
 
