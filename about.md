@@ -15,7 +15,7 @@ Siamo **programmatori**, **musicisti**, **studenti**, **professionisti**, e sopr
 
 Maggiori info [qui](/team).
 
-## Che Facciamo?
+## Che facciamo?
 
 Per ora siamo ancora in fase embrionale, abbiamo messo su:
 
