@@ -1,8 +1,0 @@
----
-layout: page
-title: About
-permalink: /about/
-lang-ref: about-page
----
-
-TODO
