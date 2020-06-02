@@ -9,7 +9,7 @@ lang-ref: about-page
 
 We are just a bunch of guys who replied to a reddit post in [here](https://www.reddit.com/r/ItalyInformatica/comments/giby9r/community_italiana_game_developer_open_source_ii/)(ITA).
 
-Different ages and different professional competencies.
+We're people from various backgrounds and different ages.
 
 We are **coders**, **musicians**, **students**, **professional**, but more importantly, gamers.
 
@@ -32,4 +32,3 @@ The aim of any community is, obviously to hangout and collaborate with people wi
 Our community is no different, and aside the basic, we have the main aim of creating a small virtual hub to get together people who wants to create videogames or people who wants to learn how to do one collaborating on existing projects.
 
 It does not really matter if you know how to code or not, the only prerequisite is that you need to share our same passion.
-
