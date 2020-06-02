@@ -23,7 +23,7 @@ We are still working on it, at the moment we have setup:
 
 - A [GitHub](https://github.com/nientedidecente) org, where we plan to collaborate over gamedev projects.
 
-- This blog made with github pages.
+- This blog made with GitHub Pages.
 
 ## What do we want?
 
