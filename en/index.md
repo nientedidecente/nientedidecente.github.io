@@ -17,7 +17,7 @@ In 2020 not anymore, games are usually supporting multiple platforms, even some 
 
 That is what **NDD Games** is trying to be.
 
-A community of videogames enthusiasts who can't only focus on playing games, but also, who wants to create some new ones.
+A community of videogames enthusiasts who can't only focus on playing games, but also want to create some new ones.
 
 ## Link
 
