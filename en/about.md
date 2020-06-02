@@ -11,7 +11,7 @@ We are just a bunch of guys who replied to a reddit post in [here](https://www.r
 
 We're people from various backgrounds and different ages.
 
-We are **coders**, **musicians**, **students**, **professional**, but more importantly, gamers.
+We are **coders**, **musicians**, **students**, **professionals**, but most importantly, gamers.
 
 More info in [here](./team).
 
