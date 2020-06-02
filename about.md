@@ -23,7 +23,7 @@ Per ora siamo ancora in fase embrionale, abbiamo messo su:
 
 - Una org su [GitHub](https://github.com/nientedidecente), dove collaboriamo su progetti di gamedev.
 
-- Questo blog su github pages.
+- Questo blog su GitHub Pages.
 
 ## Che Vogliamo?
 
