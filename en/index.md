@@ -11,7 +11,7 @@ lang-ref: index-page
 
 (=Nothing fancy) used to be the answer to the question:
 
-> Oh, so are there game on Linux as well?
+> Oh, so are there games on Linux as well?
 
 In 2020 not anymore, games are usually supporting multiple platforms, even some triple As, and all thanks to the hard work of Open Source Communities.
 
