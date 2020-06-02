@@ -27,7 +27,7 @@ We are still working on it, at the moment we have setup:
 
 ## What do we want?
 
-The aim of any community is, obviously to hangout and collaborate with people with same interests.
+The aim of any community is obviously to hang out and collaborate with people with same interests.
 
 Our community is no different, and aside the basic, we have the main aim of creating a small virtual hub to get together people who wants to create videogames or people who wants to learn how to do one collaborating on existing projects.
 
